@@ -1,3 +1,40 @@
 <resources>
+
     <string name="app_name">MakiabelAppAndroid</string>
+
+
+    <string name="country_prompt">Choisissez une confrérie</string>
+    <string-array name="country_arrays">
+        <item>Les geeks</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+    </string-array>
+
+    <string name="day_prompt">Jour</string>
+    <string-array name="day_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string name="month_prompt">Mois</string>
+    <string-array name="month_arrays">
+        <item>Janvier</item>
+        <item>Février</item>
+        <item>Mars</item>
+    </string-array>
+
+    <string name="year_prompt">Années</string>
+    <string-array name="year_arrays">
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+    </string-array>
+
 </resources>

@@ -12,54 +12,225 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/splash"
+        android:src="@drawable/bg"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/logoSplash"
+            android:layout_marginTop="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_logo_mkb_solo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Inscription / étape 1"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="bottom">
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Je suis : "
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"/>
+
+            <RadioGroup
+                android:id="@+id/group_radioSex"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/femme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Une Femme"
+                    android:buttonTint="@android:color/white"/>
+
+                <RadioButton
+                    android:id="@+id/homme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Un homme"
+                    android:buttonTint="@android:color/white"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/input_stroke_white">
+
+            <View
+                android:background="@drawable/ic_birthday"
+                android:layout_width="25dp"
+                android:layout_gravity="center"
+                android:layout_height="25dp"/>
+
+            <Spinner
+                android:id="@+id/old_day"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forme_stroke_white_no_radius" />
+
+            <Spinner
+                android:id="@+id/old_month"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/forme_stroke_white_no_radius" />
+
+            <Spinner
+                android:id="@+id/old_year"
+                android:layout_width="90dp"
+                android:layout_height="40dp" />
+
+
+        </LinearLayout>
+
+
+
 
         <EditText
-            android:id="@+id/login"
+            android:drawableLeft="@drawable/ic_mail"
+            android:id="@+id/email"
             android:textColorHint="#ffffff"
             android:textColor="#2ecc71"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="15dp"
             android:textSize="14dp"
             android:layout_gravity="center"
-            android:ems="10"
             android:hint="Adresse email"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:background="@drawable/input_stroke_white"/>
+
         <EditText
+            android:drawableLeft="@drawable/ic_lock"
             android:id="@+id/password"
             android:layout_width="match_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
             android:textColorHint="#ffffff"
             android:textColor="#2ecc71"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="15dp"
             android:textSize="14dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPersonName" />
+            android:hint="Mot de passe"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_stroke_white"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_lock"
+            android:id="@+id/passwordConfirm"
+            android:textColorHint="#ffffff"
+            android:textColor="#2ecc71"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:hint="Confirmation du mot de passe"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_stroke_white"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_account"
+            android:id="@+id/pseudo"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColorHint="#ffffff"
+            android:textColor="#2ecc71"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:textSize="14dp"
+            android:hint="Pseudo"
+            android:inputType="textPersonName"
+            android:background="@drawable/input_stroke_white"/>
+
+        <Spinner
+            android:id="@+id/brotherhood"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:entries="@array/country_arrays"
+            android:prompt="@string/country_prompt"
+            android:paddingLeft="8dp"
+            android:background="@drawable/input_stroke_white" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:layout_marginBottom="15dp"
+            android:textSize="11dp"
+            android:layout_height="wrap_content"
+            android:text="Je certifie être majeur(e) et j'accepte les conditions générales d'utilisation. J'accepte que Makiabel collecte et traite mes données sensibles dans le cadre de ses services." />
 
         <Button
+            android:drawableRight="@drawable/ic_chevron_right"
             android:id="@+id/SignUp"
             android:layout_width="match_parent"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="40dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginLeft="50dp"
+            android:paddingLeft="30dp"
+            android:layout_marginRight="50dp"
             android:background="@drawable/btn_pink"
             android:textColor="@android:color/white"
             android:text="Inscription 2/2"

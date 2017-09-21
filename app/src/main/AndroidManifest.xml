@@ -22,7 +22,7 @@
 
         <!-- Main activity -->
         <activity android:name=".landing.Home" />
-        <activity android:name=".user.SignUp"></activity>
+        <activity android:name=".landing.SignUp"></activity>
     </application>
 
 </manifest>

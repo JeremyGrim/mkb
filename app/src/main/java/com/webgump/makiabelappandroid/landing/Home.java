@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.webgump.makiabelappandroid.R;
-import com.webgump.makiabelappandroid.user.SignUp;
 
 public class Home extends AppCompatActivity {
 

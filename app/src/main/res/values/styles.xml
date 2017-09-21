@@ -2,6 +2,8 @@
 
     <style name="MakiaTheme" parent="MakiaTheme.Base">
 
+        <item name="android:statusBarColor">@color/darkBlue</item>
+        <item name="android:navigationBarColor">@color/darkBlue</item>
     </style>
 
     <style name="MakiaTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
